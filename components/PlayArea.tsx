@@ -66,7 +66,7 @@ const PlayArea: React.FC<PlayAreaProps> = ({ textItem, correctGuesses, onUpdateP
 
       if (forceHint) {
         // HINT LOGIC
-        onUpdateProgress(token.originalIndex); // Mark specific instance as known
+        // onUpdateProgress(token.originalIndex); // Mark specific instance as known
         return newTokens.map((t, i) => i === index ? { 
           ...t, 
           userValue: t.text, 
